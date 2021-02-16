@@ -1,0 +1,88 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+/* Reset margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common styles */
+
+body {
+    background-color: #dfe1e6;
+    font-family: Nunito;
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    margin: 20px 0;
+}
+
+/* Element styles */
+
+section, section>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: block;
+}
+
+/* Header section style */
+
+header {
+    width: 80%;
+    height: 30%;
+    margin: 0 auto;
+}
+
+/* Mission section styles */
+
+#mission {
+    height: 60%;
+}
+
+/* Portfolio section styles */
+
+#portfolio {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Media */
+
+@media only screen and (min-width:600px){
+    
+    section>div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div>div {
+        margin: 10px 10px;
+        width: 42%;
+    }
+}
+
+@media only screen and (min-width:900px){
+    
+    section>div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div>div {
+        margin: 10px 10px;
+        width: 30%;
+    }
+}
