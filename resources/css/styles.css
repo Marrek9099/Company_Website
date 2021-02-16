@@ -41,11 +41,22 @@ img {
     width: 90%;
     margin: 0 auto;
 }
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
 /* Header section style */
 
 header {
     width: 80%;
-    height: 30vh;
     margin: 0 auto;
 }
 
@@ -62,7 +73,6 @@ header {
 
 #mission>div {
     width: 100%;
-    height: 30%;
     background-color:#dfe1e6;
     padding: 0.5rem;
     line-height: 1;
@@ -96,24 +106,34 @@ footer {
 /* Media */
 
 @media only screen and (min-width:600px){
-    
+
+    /* Switch from single column layout to multiple columns*/
+
     #portfolio>div, #team>div {
         flex-direction: row;
         flex-wrap: wrap;
     }
     
+    /* Switch from vertical to horizontal navbar when screen width is higher than 600px */
+
     nav>div {
         display: flex;
         justify-content: space-evenly;
     }
+
+    /* Create 2 column grid layout for portfolio and team sections if screen width is higher than 600px */
+
     div>div {
         width: 40%;
     }
 }
 
 @media only screen and (min-width:900px){
+
+    /* Create 4 column grid layout for portfolio and team sections if screen width is higher than 900px*/
+    
     div>div {
-        width: 30%;
+        width: 25%;
     }
     
 }
