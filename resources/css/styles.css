@@ -30,6 +30,7 @@ section, section>div {
     align-items: center;
 }
 
+
 a {
     display: block;
     color: black;
@@ -99,6 +100,11 @@ footer {
     #portfolio>div, #team>div {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    
+    nav>div {
+        display: flex;
+        justify-content: space-evenly;
     }
     div>div {
         width: 40%;
